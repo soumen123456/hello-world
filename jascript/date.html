@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="red">
+    </h1>
+    <button onclick="getdate()">date</button>
+    <button onclick="getMonth()">month</button>
+    <button onclick="getfullyear()">fullyear</button>
+    <button onclick="getMilliseconds()">milisecond</button>
+    <button onclick="gethours()">hours</button>
+    <button onclick="getminutes()">minutes</button>
+    <button onclick="getday()">day</button>
+    <button onclick="getsecond()">second</button>
+</body>
+<script>
+   var a = new Date();
+   
+   function getdate(){
+    document.getElementById("red").innerText = a.getDate();
+   }
+   function getMonth(){
+    document.getElementById("red").innerText = a.getMonth();
+   }
+   function getfullyear(){
+    document.getElementById("red").innerText = a.getFullYear();
+   }
+   function getMilliseconds(){
+    document.getElementById("red").innerText = a.getMilliseconds();
+   }
+   function gethours(){
+    document.getElementById("red").innerText = a.getHours();
+   }
+   function getminutes(){
+    document.getElementById("red").innerText = a.getMinutes();
+   }
+   function getday(){
+    document.getElementById("red").innerText = a.getDay();
+   }
+   function getsecond(){
+    document.getElementById("red").innerText = a.getSeconds();
+   }
+</script>
+</html>

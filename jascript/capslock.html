@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="red">
+    <br>
+    <input type="text" id="name">
+    <error id="er"></error>
+    <input type="submit" name="name">
+</body>
+<script>
+   window.addEventListener("keyup",event => {
+   var all = console.log(event.getModifierState("capslock"));
+   if(all){
+    document.getElementById("er").innerText = "worning capslock on"
+   }else{
+    document.getElementById("er").innerText = "";
+   }
+   })
+</script>
+</html>

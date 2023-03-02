@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+          .ap{
+            color: red;
+          }
+          .op{
+            color: blue;
+          }
+    </style>
+</head>
+<body>
+    <div id="red" class="ap">
+        hello everyone
+    </div>
+    <button onclick="testing()">click</button>
+    <h1 id="ab"></h1>
+</body>
+<script>
+    function testing(){
+      var cl = document.getElementById("red").getAttribute("class");
+     document.getElementById("ab").innerText = cl;
+    }
+</script>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <button onclick="red()">click me</button>
+    <h1 id="ab"></h1> -->
+
+enter number 5 to 10
+<input type="text" name="name" id="app">
+<button onclick="text()">click me</button>
+<h1 id="er"></h1>
+</body>
+<script>
+//    function red(){
+//     try{
+//         var number = "red ball";
+//        var x = number.toUpperCase();
+//        document.getElementById("ab").innerText = x;
+//     }
+//     catch(err){
+//         document.getElementById("ab").innerHTML = err;
+//     }
+//    }
+
+
+// try catch throw //
+
+var app = document.getElementById("app");
+function text(){
+   var data = app.value;
+   try{
+  if(isNaN(data)){
+    throw "this ia not number";
+  }else{
+    if(data<5 || data>10){
+        throw "number is out of range";
+    }else{
+        throw "";
+    }
+  }
+   }catch(err){
+document.getElementById("er").innerText = err;
+   }
+   finally{
+    app.value = "";
+   }
+    }
+</script>
+</html>
